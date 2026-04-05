@@ -1,0 +1,9 @@
+class Solution:
+    def climbStairs(self, n: int) -> int:
+        one = 1
+        two = 1
+        for i in range(n):
+            temp = one+two
+            one = two
+            two = temp
+        return one
